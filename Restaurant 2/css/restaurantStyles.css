@@ -1,0 +1,40 @@
+/*
+Name: Amir Ibrahim
+Date Created: 01/05/2018
+Date Last revision:
+*/
+header,footer{
+  text-align:center;
+}
+header h1{
+  font-family: monospace, cursive;
+}
+nav p{
+  display: inline;
+  padding: 10px;
+}
+nav a:visited{
+  color: #B3A39E;
+}
+nav a:hover{
+  font-weight: bold;
+}
+nav a:active{
+  text-decoration: none;
+}
+.home{
+  background-color: #E5E3E7;
+  padding: 10px;
+}
+.home div{
+  width: 410px;
+  margin: 0px auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+ nav hr:last-child{
+  margin-bottom: 0px;
+}
+footer hr{
+  margin: 0px;
+}
