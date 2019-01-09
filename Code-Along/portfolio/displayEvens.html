@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Display Evens</title>
+    <style media="screen">
+      #result{
+        display:none;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="evens">
+      <h1>Sample</h1>
+      <div>
+        <label for="sNumber">Starting Number </label>
+        <input type="number" name="sNumber" />
+      </div>
+      <div class="">
+        <label for="eNumber">Ending Number </label>
+        <input type="number" name="eNumber" />
+      </div>
+      <div class="">
+        <label for="step">Step </label>
+        <input type="number" name="step" />
+      </div>
+      <button onclick="displayEvens()" type="button" id="btnSubmit">Display Evens</button>
+    </form>
+    <div id="result">
+      <p>Here are the even number between <span id="sNumber"></span> and
+        <span id="eNumber"></span> by <span id="step"></span></p>
+      <span id="results"></span>
+    </div>
+
+    <script>
+      function displayEvens(){
+        var evensForm = document.getElementById('evens');
+        var sNumber = evensForm.elements['sNumber'].value;
+        var eNumber = evensForm.elements['eNumber'].value;
+        var step = evensForm.elements['step'].value;
+
+       //Fill the paragraph
+       document.getElementById("sNumber").innerHTML = sNumber;
+       document.getElementById("eNumber").innerHTML = eNumber;
+       document.getElementById("step").innerHTML = step +"'s";
+
+       if (sNumber != 0 && sNumber < eNumber) {
+         if(step != 0 && step < eNumber){
+
+           var results;
+           while (step < eNumber) {
+             results += step;
+
+             document.getElementById('results').innerText = results;
+             step++;
+           }
+
+
+         }else {
+           alert("Step number cannot be greater than or equal to Beginnig and Ending number!");
+         }
+       }else {
+         alert("Please check your input: all fields area required");
+       }
+
+       //toggle display for result
+        document.getElementById('result').style.display = "block";
+     }
+    </script>
+  </body>
+</html>
