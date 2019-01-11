@@ -1,0 +1,49 @@
+/*
+Name: Amir Ibrahim
+Date Created: 01/05/2018
+Date Last revision: 01/10/2019
+*/
+header,footer{
+  text-align:center;
+}
+header h1{
+  font-family: monospace, cursive;
+}
+nav .btn{
+  background-color: #C38D94;
+  color: #FFFCF9;
+}
+nav p{
+  display: inline;
+  padding: 10px;
+}
+nav a:visited{
+  background-color: #B3A39E;
+}
+nav a:hover{
+  font-weight: bold;
+}
+nav a:active{
+  text-decoration: none;
+}
+.home{
+  background-color: #E5E3E7;
+  padding: 10px;
+}
+.home p, .kitchen{
+  width: 410px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin: 0px auto;
+}
+ nav hr:last-child{
+  margin-bottom: 0px;
+}
+.container em{
+  font-weight: bold;
+  color:#FAA916;
+}
+.container p a:hover{
+  font-weight: bold;
+  cursor: pointer;
+}

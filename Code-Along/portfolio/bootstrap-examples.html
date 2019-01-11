@@ -8,7 +8,7 @@
     <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <style>
-      nav {
+    /*  nav {
           border-top: thin #5b7d87 solid;
           border-bottom: thin #5b7d87 solid;
           padding-top: 12px;
@@ -20,7 +20,7 @@
       }
       nav .btn:hover{
         font-weight: bold;
-      }
+      }*/
     </style>
   </head>
   <body>
@@ -46,7 +46,29 @@
         </div>
       </div>
     </div>
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="Portfolio1">
+          <h5 class="mb-0">
+            <button type="button" class="btn btn-link" data-toggle="collapse"
+            data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              My First Portfolio Piece
+            </button>
+          </h5>
+        </div>
 
+        <div class="collapse" id="collapseOne" aria-labelledby="headingOne"
+        data-parent="#accordionExample">
+          <div class="card-body">
+            <p><a href="" target="_blank">Name of website</a></p>
+            <figure>
+              <img src="images/hobbies.jpg" alt="screenshot of home page" />
+            </figure>
+          </div>
+        </div>
+
+      </div>
+    </div>
     <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

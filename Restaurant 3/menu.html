@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--
+Name: Amir Ibrahim
+Date Created: 01/09/2018
+Date Last revision: 01/10/2019
+-->
+<html>
+<head>
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="css/restaurantStyles.css" />
+    <style>
+      .row {
+        display:flex;
+        text-align:center;
+      }
+      .row p{
+        flex: 1;
+      }
+      p strong{
+        font-size: 18px;
+      }
+      section{
+        background-color: #F3EFED;
+      }
+      .table{
+        padding-bottom: 15px;
+        margin-bottom: 0px;
+      }
+      table{
+        width: 50%;
+        margin: auto;
+        border:1px solid black;
+
+      }
+      table,th,td{
+        padding: 10px 5px 10px 5px;
+        border-collapse: collapse;
+      }
+      th{
+        text-align: left;
+        font-size: 20px;
+      }
+    tbody tr:nth-child(odd){
+        background-color: #E9E6E4;
+      }
+      tbody tr:hover{
+        color: #FFFFFF;
+        font-weight: bold;
+      }
+    </style>
+</head>
+<body>
+  <!-- if JavaScript is disabled/not supported ------------------------------------>
+  <noscript>Please enable JavaScript in your browser. This site is best viewed with JavaScript enabled.</noscript>
+  <header>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Wasim Kitchen</h1>
+        <p><em>Big news</em> - we are opening new store in
+          <a href="#" title="123 Plymouth Road">Plymouth, MN!</a></p>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <p><a class="btn badge-pill" href="index.html"><i class="fa fa-home"></i>Home</a></p>
+    <p><a class="btn badge-pill" href="menu.html">Menu</a></p>
+    <p><a class="btn badge-pill" href="contact.html">Contact Us</a></p>
+    <hr />
+  </nav>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <p>
+              <strong>Burger and Fries</strong><br />An American classic!<br />
+              Your choice - with or without cheese<br />Pickle, tomato, and lettuce<br />
+              Served with our famous thick cut french fries<br />$7.95
+          </p>
+        </div>
+        <div class="col-sm">
+          <p>
+            <strong>Hot Dog and Chips</strong><br />A summer Classic!<br />
+            Your choice - white or wheat bun<br />Relish, mustard, and ketchup<br >
+            Served with our house-made chips<br />$7.95
+          </p>
+        </div>
+        <div class="col-sm">
+          <p>
+            <strong>Italian Sausage and Peppers</strong><br />An All-Time Favorite!<br />
+            Your choice - mild or spicy Cole Slaw<br />Served with garlic mashers<br />$10.95
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm">
+          <p>
+            <strong>Tenderloin Sandwich and Chips</strong><br />Really Hits the Spot!<br />
+            Plain or Sesame Seed Bun<br />Pickle, onion, tomato, and lettuce<br />Served with Your
+            house-made chips<br />$8.95
+          </p>
+        </div>
+          <div class="col-sm">
+          <p>
+            <strong>House Salad</strong><br />On the Lighter Side<br />Your choice - with or without cheese<br />
+            Iceberg lettuce, tomatoes, peppers<br /> Thousand Island or Ranch<br />
+            DressingServed with a dinner roll<br />$6.95
+          </p>
+        </div>
+        <div class="col-sm">
+          <p>
+            <strong>Brisket Sandwich and Fries</strong><br />A Taste of Texas!<br />
+            Smoked Brisket on thick-cut<br />Texas Toast<br />Cole Slaw<br />
+            Served with our famous thick-cut<br/> french fries<br />$7.95
+        </div>
+      </div>
+    </div>
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">Beverages</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Root Beer</td>
+            <td>$3.00</td>
+          </tr>
+          <tr>
+            <td>Bottled Water</td>
+            <td>$1.25</td>
+          </tr>
+          <tr>
+            <td>Lemonade</td>
+            <td>$1.00</td>
+          </tr>
+          <tr>
+            <td>Iced Tea</td>
+            <td>$1.25</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <footer class="jumbotron">
+    <p>123 Yellow Brick RD, Minneapolis, MN 55001</p>
+    <p>Tel: 612-555-1234</p>
+  </footer>
+  <!-- Bootstrap links --------------------------->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
