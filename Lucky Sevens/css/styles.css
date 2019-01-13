@@ -1,0 +1,82 @@
+section{
+  font-family: cursive;
+  width: 500px;
+  margin: 0px auto;
+}
+h1{
+  font-size: 50px;
+}
+label,input, #play, #playAgain {
+  font-size: 24px;
+}
+input, #play{
+  border: 5px solid black;
+  width: 80px;
+  height: 40px;
+}
+input{
+  text-align: center;
+}
+#play, #playAgain{
+  background-color: white;
+  margin-top: 20px;
+  box-shadow: 5px 5px;
+}
+#play:hover, #playAgain:hover{
+  cursor: pointer;
+  margin-left: 2px;
+}
+#playAgain{
+  display: none;
+  height: 40px;
+  border: 5px solid black;
+}
+#errorMessage{
+  color: red;
+  font-weight: bold;
+}
+#results{
+  display: none;
+}
+table{
+  border: 3px solid;
+  border-collapse: collapse;
+}
+th, td{
+  min-width: 100px;
+  text-align: left;
+  padding: 5px;
+  border-right: 3px solid;
+}
+th{
+  background-color: gray;
+}
+tbody tr:nth-child(odd){
+  background-color: darkgray;
+}
+tr td:last-child{
+  font-weight: bold;
+}
+caption{
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight:bold;
+}
+#gameOver{
+  display: none;
+  border-radius: 50%;
+  border: 3px solid black;
+  font-size: 30px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  color: red;
+}
+hr{
+  border: 3px solid black;
+  margin: 25px 0px 25px 0px;
+  width: 370px;
+}
+.buttons{
+  margin-left: 100px;
+}
